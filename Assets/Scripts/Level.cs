@@ -25,15 +25,15 @@ public class Level : ScriptableObject
 
 		Debug.Log(_layout);
 		Debug.Log($"Width: {layoutWidth} Height: {layoutHeight}");
-		MapTile[,] tiles = new MapTile[layoutWidth, layoutHeight];
+		MapTile[,] tiles = new MapTile[layoutHeight, layoutWidth];
 
-		for (int w = 0; w < layoutWidth; w++)
+		for (int h = 0; h < layoutHeight; h++)
 		{
-			for (int h = 0; h < layoutHeight; h++)
+			for (int w = 0; w < layoutWidth; w++)
 			{
-				 tiles[w, h] = lines[w][h] switch
+				tiles[h, w] = lines[h][w] switch
 				{
-					'x' =>  new MapTile(isWalkable: false),
+					'x' => new MapTile(isWalkable: false),
 					'o' => new MapTile(isWalkable: true),
 					's' => new MapTile(isWalkable: true, isStartPoint: true),
 					'e' => new MapTile(isWalkable: true, isEndPoint: true),
@@ -42,6 +42,7 @@ public class Level : ScriptableObject
 				};
 			}
 		}
+
 		return tiles;
 	}
 }
