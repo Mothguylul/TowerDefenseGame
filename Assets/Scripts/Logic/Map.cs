@@ -10,9 +10,9 @@ namespace TowerDefense.Logic
 	{
 		private readonly MapTile[,] _board;
 
-		public int Width => _board.GetLength(0);
+		public int Width => _board.GetLength(1);
 
-		public int Height => _board.GetLength(1);
+		public int Height => _board.GetLength(0);
 
 		public (int X, int Y) StartPoint { get; private set; }
 
@@ -78,12 +78,12 @@ namespace TowerDefense.Logic
 		/// <param name="x"></param>
 		/// <returns></returns>
 		/// <exception cref="ArgumentException"></exception>
-		public MapTile? GetBoardContents(int y, int x)
+		public MapTile? GetBoardContents(int row, int column)
 		{
-			if (x < 0 || x >= Width || y < 0 || y >= Height)
+			if (column < 0 || column >= Width || row < 0 || row >= Height)
 				return null;
 			else
-				return _board[y, x];
+				return _board[row, column];
 		}
 
 	}

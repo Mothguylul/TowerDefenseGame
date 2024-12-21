@@ -5,12 +5,20 @@ using TowerDefense.Logic;
 using UnityEngine;
 using System.Linq;
 using Unity.VisualScripting;
+using UnityEngine.Tilemaps;
 
 [CreateAssetMenu(fileName = "level", menuName = "Level")]
 public class Level : ScriptableObject
 {
 	[TextArea(minLines: 5, maxLines: 20)]
 	[SerializeField] private string _layout;
+
+	[SerializeField] private TileBase _walkableTile;
+	[SerializeField] private TileBase _buildableTile;
+
+	public TileBase WalkableTile => _walkableTile;
+	public TileBase BuildableTile => _buildableTile;
+
 
 	/// <summary>
 	/// Populates the Maptile[,] with the right Maptiles and returns all Maptiles by the string
@@ -42,7 +50,6 @@ public class Level : ScriptableObject
 				};
 			}
 		}
-
 		return tiles;
 	}
 }
