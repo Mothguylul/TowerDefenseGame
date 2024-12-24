@@ -12,12 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7bb9918e3ff35c4e81305adede34d90, type: 3}
   m_Name: level
   m_EditorClassIdentifier: 
-  _layout: 'xxxexx
+  _layout: 'xxxxxxxxxxxxeoooxxxxxxxx
 
-    xxxoxx
+    xxxxxxxxxxxxooxxooxxxxxx
 
-    xxooxx
+    xxxxxxxxxxxxooxxxoooxxxx
 
-    xxsxxx'
+    xxxxxxxxxxxoooxxxxoooxxx
+
+    xxxxxxxxxoooxxxxxxxooxxx
+
+    xxxxxxxxooxxxxxxxxxxooxx
+
+    xxxxxxoooxxxxxxxxxxoooxx
+
+    xxxxxxxooxxxxxxxxxxooxxx
+
+    xxxxxxxxooxxxxxxxxooxxxx
+
+    xxxxxxxxooxxxxxxoooxxxxx
+
+    xxxxxxxxxooxxxooxxxxxxxx
+
+    xxxxxxxxxxxsoxxxxxxxxxxx'
   _walkableTile: {fileID: 11400000, guid: 50279fa01657ba945a09680f6688af4f, type: 2}
   _buildableTile: {fileID: 11400000, guid: 43f69dffb11dec9408d92eb48d793d76, type: 2}

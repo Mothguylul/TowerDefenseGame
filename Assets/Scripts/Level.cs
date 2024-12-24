@@ -10,7 +10,7 @@ using UnityEngine.Tilemaps;
 [CreateAssetMenu(fileName = "level", menuName = "Level")]
 public class Level : ScriptableObject
 {
-	[TextArea(minLines: 5, maxLines: 20)]
+	[TextArea(minLines: 5, maxLines: 50)]
 	[SerializeField] private string _layout;
 
 	[SerializeField] private TileBase _walkableTile;

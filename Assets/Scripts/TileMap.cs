@@ -15,6 +15,7 @@ public class LevelMap : MonoBehaviour
 
     private Map _map;
     private Tilemap _tilemap;
+	private Camera _camera;
 
     [SerializeField] private Level _level;
 
@@ -25,6 +26,9 @@ public class LevelMap : MonoBehaviour
 		_map = new Map(maptiles);
         _tilemap = GetComponent<Tilemap>();
         PaintTiles();
+		Vector3 centerpoint = CalculateCenterPoint();
+		_camera = Camera.main;
+		_camera.transform.position = centerpoint;
 	}
 	private void PaintTiles()
 	{
@@ -40,6 +44,19 @@ public class LevelMap : MonoBehaviour
 			}
         }
 		_tilemap.RefreshAllTiles();
+	}
+
+    private Vector3 CalculateCenterPoint()
+    {
+		BoundsInt bounds = _tilemap.cellBounds;
+
+		Vector3 min = _tilemap.CellToWorld(bounds.min);
+		Vector3 max = _tilemap.CellToWorld(bounds.max);
+
+		Vector3 center = (min + max) / 2;
+		center.z = -10;
+
+		return center;
 	}
 }
  
