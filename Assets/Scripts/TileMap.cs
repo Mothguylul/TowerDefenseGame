@@ -19,8 +19,8 @@ public class LevelMap : MonoBehaviour
 
     [SerializeField] private Level _level;
 
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
         MapTile[,] maptiles = _level.GetMapTiles();
 		_map = new Map(maptiles);
@@ -30,6 +30,9 @@ public class LevelMap : MonoBehaviour
 		_camera = Camera.main;
 		_camera.transform.position = centerpoint;
 	}
+
+	
+
 	private void PaintTiles()
 	{
         for(int y = 0; y < _map.Height; y++)
@@ -38,7 +41,7 @@ public class LevelMap : MonoBehaviour
             {
                 MapTile currentMaptile = _map.GetBoardContents(y,x);
 				TileBase tileToPlace = currentMaptile.IsWalkable
-					? _level.WalkableTile
+					? _level.GetRandomWalkableTile()
 					: _level.BuildableTile;
 				_tilemap.SetTile(new Vector3Int(x, -y), tileToPlace);
 			}

@@ -16,9 +16,16 @@ public class Level : ScriptableObject
 	[SerializeField] private TileBase _walkableTile;
 	[SerializeField] private TileBase _buildableTile;
 
-	public TileBase WalkableTile => _walkableTile;
+	[SerializeField]  private TileBase[] _walkableTiles;
+
 	public TileBase BuildableTile => _buildableTile;
 
+	public TileBase GetRandomWalkableTile()
+	{
+		if (_walkableTiles == null || _walkableTiles.Length == 0)
+			throw new Exception("No walkable tiles assigned.");
+		return _walkableTiles[UnityEngine.Random.Range(0, _walkableTiles.Length)];
+	}
 
 	/// <summary>
 	/// Populates the Maptile[,] with the right Maptiles and returns all Maptiles by the string
@@ -52,4 +59,6 @@ public class Level : ScriptableObject
 		}
 		return tiles;
 	}
+
+
 }

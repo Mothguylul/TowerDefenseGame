@@ -3,7 +3,9 @@ guid: a7bb9918e3ff35c4e81305adede34d90
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _walkableTile: {fileID: 11400000, guid: 217f276b1593ab0488cff99575406e80, type: 2}
+  - _buildableTile: {fileID: 11400000, guid: 43f69dffb11dec9408d92eb48d793d76, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

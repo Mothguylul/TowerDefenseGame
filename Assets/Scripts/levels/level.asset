@@ -37,3 +37,10 @@ MonoBehaviour:
     xxxxxxxxxxxsoxxxxxxxxx'
   _walkableTile: {fileID: 11400000, guid: 217f276b1593ab0488cff99575406e80, type: 2}
   _buildableTile: {fileID: 11400000, guid: 43f69dffb11dec9408d92eb48d793d76, type: 2}
+  _walkableTiles:
+  - {fileID: 11400000, guid: 253c37fec51dca84198066193b00b9b6, type: 2}
+  - {fileID: 11400000, guid: d7ea70e2004da094daebac890dacaa7d, type: 2}
+  - {fileID: 11400000, guid: 0f37d28bee36d4c4d876f6d53dec418f, type: 2}
+  - {fileID: 11400000, guid: a818d3f060e4b404fad9e62a64620ffd, type: 2}
+  - {fileID: 11400000, guid: 217f276b1593ab0488cff99575406e80, type: 2}
+  - {fileID: 11400000, guid: 253c37fec51dca84198066193b00b9b6, type: 2}
