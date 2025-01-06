@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,7 +22,9 @@ namespace Assets.Scripts.Logic
 		public Enemy(Map map)
 		{
 			_validMap = map;
+			Spawn();
 		}
+
 
 		public void Spawn()
 		{
@@ -32,7 +35,11 @@ namespace Assets.Scripts.Logic
 		public void FindNextSquare()
 		{
 			(int x, int y)? validSquareToMoveTo = null;
-			(int currentX, int currentY) currentPosition = Position.Value;
+
+			if (!Position.HasValue)
+				Console.WriteLine("Positon is null");
+
+				(int currentX, int currentY) currentPosition = Position.Value;
 
 
 			// List of all the squares next to the current position

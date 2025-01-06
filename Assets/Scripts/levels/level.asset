@@ -38,9 +38,11 @@ MonoBehaviour:
   _walkableTile: {fileID: 11400000, guid: 217f276b1593ab0488cff99575406e80, type: 2}
   _buildableTile: {fileID: 11400000, guid: 43f69dffb11dec9408d92eb48d793d76, type: 2}
   _walkableTiles:
-  - {fileID: 11400000, guid: 253c37fec51dca84198066193b00b9b6, type: 2}
-  - {fileID: 11400000, guid: d7ea70e2004da094daebac890dacaa7d, type: 2}
-  - {fileID: 11400000, guid: 0f37d28bee36d4c4d876f6d53dec418f, type: 2}
-  - {fileID: 11400000, guid: a818d3f060e4b404fad9e62a64620ffd, type: 2}
-  - {fileID: 11400000, guid: 217f276b1593ab0488cff99575406e80, type: 2}
-  - {fileID: 11400000, guid: 253c37fec51dca84198066193b00b9b6, type: 2}
+  - {fileID: 11400000, guid: c2c73caf8ce8ebb49b87909eba55708f, type: 2}
+  - {fileID: 11400000, guid: 494077b90fc41544e94a8ccf3763b377, type: 2}
+  - {fileID: 11400000, guid: 248a22279bb0a2f438c682edd3bf52ac, type: 2}
+  - {fileID: 11400000, guid: d9f5d9d2636876448bbd04f3b169fedf, type: 2}
+  - {fileID: 11400000, guid: 1f353cdc8ff0d66459b21cf414757be8, type: 2}
+  - {fileID: 11400000, guid: aaf978cdf7a91c84897f52980da3d352, type: 2}
+  - {fileID: 11400000, guid: e694227385db064409932ef94119679f, type: 2}
+  - {fileID: 11400000, guid: e13f7bbfad996354aa7e4c85c151933f, type: 2}

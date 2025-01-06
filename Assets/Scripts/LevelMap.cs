@@ -13,14 +13,11 @@ using UnityEngine.WSA;
 /// </summary>
 public class LevelMap : MonoBehaviour
 {
-	public Map Map;
 
 	private Grid _grid;
 
 	private Vector3 startpointCords;
-	public Vector2 StartPoint => _grid.LocalToWorld(startpointCords);
 
-	public Tilemap TileMap;
 
 	private Camera _camera;
 
@@ -29,6 +26,13 @@ public class LevelMap : MonoBehaviour
 	private MapTile[,] MapTiles;
 
 	[SerializeField] public Level Level;
+
+	public Tilemap TileMap;
+
+	public Map Map;
+	public Vector2 StartPoint => _grid.LocalToWorld(startpointCords);
+
+	public Grid Grid => _grid;
 
 	// Start is called before the first frame update
 	void Start()

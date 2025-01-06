@@ -392,8 +392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6801723995a9764fb2537a51f8c2b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TileMap: {fileID: 1053917819}
   Level: {fileID: 11400000, guid: 187952aa6d2fe7d49b637849bff90cce, type: 2}
+  TileMap: {fileID: 1053917819}
 --- !u!1 &1565310307
 GameObject:
   m_ObjectHideFlags: 0
